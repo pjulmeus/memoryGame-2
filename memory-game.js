@@ -81,7 +81,7 @@ if(inDiv.style.backgroundColor === colorArr[0] || inDiv.style.backgroundColor ==
      inDiv.style.backgroundColor= 'white'
      colorArr = []
      clickCounter = 0
-    }, 1000);
+    }, 500);
 }
 
 // setTimeout(() => {
@@ -101,6 +101,9 @@ console.log(clickCounter);
     clickCounter = 0;
 colorArr = []
 console.log(matchedArr);
+if(matchedArr.length === COLORS.length/2){
+  alert('YOU WON!')
+}
     }
 }
 
